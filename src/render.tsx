@@ -8,12 +8,10 @@ export default function render() {
   if (container) {
     const root = createRoot(container);
     root.render(
-      <StrictMode>
-        <Suspense fallback={null}>
-          <GlobalStyle />
-          <App />
-        </Suspense>
-      </StrictMode>
+      <Suspense fallback={null}>
+        <GlobalStyle />
+        <App />
+      </Suspense>
     );
   }
 }
